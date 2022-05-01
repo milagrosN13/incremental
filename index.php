@@ -15,8 +15,5 @@
       <a class="nav-link" href="sign_in.php">registrarse</a>
       <a class="nav-link" href="log_in.php">iniciar sesion</a>
     </nav>
-    <h1 id="hola">hola</h1>
-
-
   </body>
 </html>
