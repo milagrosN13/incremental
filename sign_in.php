@@ -18,7 +18,7 @@
     <article class="formRegistrar">
       <h1>registrate</h1>
         <!--recopilacion de datos del cliente--> 
-      <form action="validaciones.php">
+      <form name="registro" action="validaciones.php">
         <div id="nombre">
           <label for="nombre">nombre</label>
           <input type="text" name="nombre" required>
@@ -33,16 +33,31 @@
         </div>
         <div id="doc">
           <p>tipo de documento</p>
-          <input type="radio" name="tipoDoc" value="DNI">
+          <input type="radio" id="Edni" name="tipoDoc" value="DNI">
           <label for="tipoDoc">DNI</label>
-          <input type="radio" name="tipoDoc" value="Pasaporte">
-          <label for="">Pasaporte</label>
+          <input type="radio" id="Epasaporte" name="tipoDoc" value="Pasaporte">
+          <label for="tipoDoc">Pasaporte</label>
         </div>
-          <!--<input type="number">-->
-      
+        <div id="dni" class="esconder">
+          <input type="number" name="dni">
+        </div>
+        <div id="pasaporte">
+          <input type="number" class="esconder" name="pasaporte">
+        </div>
         <!--mostrar opcion segun tipoDoc-->
         <script>
-        
+          function mostrar(id){
+            id.classList.remove("esconder");
+            id.classList.add("mostrar");
+          }
+            if (/*cual de las 2 opciones se eligio mediante el check*/){
+              /*muetra div id=dni*/
+              mostrar(document.getElementById("dni"))
+            } else{
+              /*muetra div id=pasaporte*/
+              mostrar(document.getElementById("pasaporte"))
+            }
+
         </script>
         <div id="mail">
           <label for="mail">correo</label>
@@ -51,30 +66,30 @@
         <div id="provincia">
           <label for="provincia">provincia</label>
           <select name="provincia">
-            <option value="buenosAires">Buenos Aires</option>
-            <option value="CbuenosAires">Ciudad Autónoma de Buenos Aires</option>
-            <option value="catamarca">Catamarca</option>
-            <option value="chaco">Chaco</option>
-            <option value="chubut">Chubut</option>
-            <option value="cordoba">Córdoba</option>
-            <option value="corrientes">Corrientes</option>
-            <option value="entreRios">Entre Ríos</option>
-            <option value="formosa">Formosa</option>
-            <option value="jujuy">Jujuy</option>
-            <option value="panpa">La Pampa</option>
-            <option value="rioja">La Rioja</option>
-            <option value="mendoza">Mendoza</option>
-            <option value="misiones">Misiones</option>
-            <option value="neuquen">Neuquén</option>
-            <option value="rioNegro">Río Negro</option>
-            <option value="salta">Salta</option>
-            <option value="sanJuan">San Juan</option>
-            <option value="sanLuis">San Luis</option>
-            <option value="santaCluz">Santa Cruz</option>
-            <option value="santaFe">Santa Fe</option>
-            <option value="Santiago">Santiago del Estero</option>
-            <option value="Tierra del Fuego">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
-            <option value="Tucumán">Tucumán</option>
+            <option name="buenosAires" value="buenosAires">Buenos Aires</option>
+            <option name="CbuenosAires" value="CbuenosAires">Ciudad Autónoma de Buenos Aires</option>
+            <option name="catamarca" value="catamarca">Catamarca</option>
+            <option name="chaco" value="chaco">Chaco</option>
+            <option name="chubut" value="chubut">Chubut</option>
+            <option name="cordoba" value="cordoba">Córdoba</option>
+            <option name="corrientes" value="corrientes">Corrientes</option>
+            <option name="entreRios" value="entreRios">Entre Ríos</option>
+            <option name="formosa" value="formosa">Formosa</option>
+            <option name="jujuy" value="jujuy">Jujuy</option>
+            <option name="pampa" value="pampa">La Pampa</option>
+            <option name="rioja" value="rioja">La Rioja</option>
+            <option name="mendoza" value="mendoza">Mendoza</option>
+            <option name="misiones" value="misiones">Misiones</option>
+            <option name="neuquen" value="neuquen">Neuquén</option>
+            <option name="rioNegro" value="rioNegro">Río Negro</option>
+            <option name="salta" value="salta">Salta</option>
+            <option name="sanJuan" value="sanJuan">San Juan</option>
+            <option name="sanLuis"> value="sanLuis">San Luis</option>
+            <option name="santaCluz" value="santaCluz">Santa Cruz</option>
+            <option name="santaFe" value="santaFe">Santa Fe</option>
+            <option name="Santiago" value="Santiago">Santiago del Estero</option>
+            <option name="Tierra del Fuego" value="Tierra del Fuego">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+            <option name="Tucumán" value="Tucumán">Tucumán</option>
           </select>
         </div>
         <div id="estudiante">
