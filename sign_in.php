@@ -4,22 +4,17 @@
     <meta charset="utf-8">
     <title>registrarse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
   </head>
   <!----> 
   <body>
-    <nav class="nav nav-tabs">
-      <a class="nav-link" href="/index.php">Inicio</a>
-      <a class="nav-link" href="/sign_in.php">registrarse</a>
-      <a class="nav-link" href="/log_in.php">iniciar sesion</a>
-      <a class="nav-link" href="/triangulo/triangulo2.html">triangulo</a>
-    </nav>
-    <h1>registrate</h1>
+    <?php include_once 'menus.php';?>
         <!--recopilacion de datos del cliente--> 
     <form name="registro" action="validaciones.php">
-      <div class="label">
+      <h1>registrate</h1>
+      <div class="label" id="nombre">
         <label for="nombre">nombre</label>
         <input type="text" name="nombre" required>
       </div>
@@ -44,21 +39,6 @@
       <div class="label" id="pasaporte">
         <input type="number" class="esconder" name="pasaporte">
       </div>
-      <!--mostrar opcion segun tipoDoc-->
-      <script>
-          function mostrar(id){
-            id.classList.remove("esconder");
-            id.classList.add("mostrar");
-          }
-            if (/*cual de las 2 opciones se eligio mediante el check*/){
-              /*muetra div id=dni*/
-              mostrar(document.getElementById("dni"))
-            } else{
-              /*muetra div id=pasaporte*/
-              mostrar(document.getElementById("pasaporte"))
-            }
-
-      </script>
       <div class="label" id="mail">
         <label for="mail">correo</label>
         <input type="mail" name="mail">
