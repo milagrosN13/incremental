@@ -3,6 +3,7 @@ form{
     display: block;
     margin: 10%;
     text-align: center;
+    columns: 5px;
 }
 .label{
     width: 70%;

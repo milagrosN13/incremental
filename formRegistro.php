@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>registrarse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="/script.js"></script>
   </head>
   <!----> 
   <body>
-    <?php include_once 'menus.php';?>
-        <!--recopilacion de datos del cliente--> 
-    <form name="registro" action="validaciones.php">
+    <?php include_once "./assets/menus.php" ; ?>
+    <!--recopilacion de datos del cliente--> 
+    <form name="registro" action="">
       <h1>registrate</h1>
       <div class="label" id="nombre">
         <label for="nombre">nombre</label>
@@ -21,6 +21,10 @@
       <div class="label" id="apellido">
         <label for="apellido">apellido</label>
         <input type="text" name="apellido" required>
+      </div>
+      <div class="label" id="nombre-usuario">
+        <label for="nombre-usuario">nombre de usuario</label>
+        <input type="text" name="nombre-usuario" required>
       </div>
       <div class="label" id="contraseña">
         <label for="contraseña">contraseña</label>
