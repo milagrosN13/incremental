@@ -10,7 +10,7 @@
 </head>
 <body>
   <?php include_once "./assets/menus.php" ; ?>
-    <form action="texto.php" method="get">
+    <form action="./texto/texto.php" method="get">
       <h1>cuantas vocales y cuantas consonantes</h1>
       <p>Ingrese un texto</p>
       <div class="label">

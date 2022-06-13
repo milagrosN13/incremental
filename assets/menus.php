@@ -5,4 +5,5 @@
     <a class="nav-link" href="\incremental\formRegistro.php">registrarse</a>
     <a class="nav-link" href="\incremental\formTriangulo.php">triangulo</a>
     <a class="nav-link" href="\incremental\formTexto.php">texto</a>
+    <a class="nav-link" href="\incremental\formEmpleado.php">empleado</a>
 </nav>

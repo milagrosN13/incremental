@@ -1,5 +1,5 @@
 <?php
-    require_once('Triangulo.php');
+    require_once('claseTriangulo.php');
     //Guardamos el valor de los ángulos en 3 variables:
     $a1=$_GET['a1'];
     $a2=$_GET['a2'];
