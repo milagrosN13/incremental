@@ -3,7 +3,4 @@
     <a class="nav-link" href="\incremental\index.php">Inicio</a>
     <a class="nav-link" href="\incremental\formInicioSesion.php">iniciar sesion</a>
     <a class="nav-link" href="\incremental\formRegistro.php">registrarse</a>
-    <a class="nav-link" href="\incremental\formTriangulo.php">triangulo</a>
-    <a class="nav-link" href="\incremental\formTexto.php">texto</a>
-    <a class="nav-link" href="\incremental\formEmpleado.php">empleado</a>
 </nav>
