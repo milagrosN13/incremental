@@ -5,31 +5,30 @@
     <title>registrarse</title>
   </head>
   <body>
-    <?php require_once "plantillas/menus.php" ; ?>
-    <!--recopilacion de datos del cliente--> 
     <form name="registro" action="">
       <h1>registrate</h1>
       <div class="label" id="nombre">
-        nombre
+        nombre<br>
         <input type="text" name="nombre" required>
       </div>
       <div class="label" id="apellido">
-        apellido
+        apellido<br>
         <input type="text" name="apellido" required>
       </div>
       <div class="label" id="nombre-usuario">
-        nombre de usuario
+        nombre de usuario<br>
         <input type="text" name="nombre-usuario" required>
       </div>
       <div class="label" id="contraseña">
-        contraseña
+        contraseña<br>
         <input type="password" name="contraseña" required>
       </div>
       <div class="label" id="mail">
-        correo
+        correo<br>
         <input type="mail" name="mail">
       </div>
       <div class="label" id="enviar">
+        <br>
         <input type="submit" name="enviar" value="enviar">
       </div>
     </form>

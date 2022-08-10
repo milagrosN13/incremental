@@ -9,16 +9,19 @@
     <form action="" method="get">
       <h1>inicio sesion</h1>
       <div class="label">
-        <label for="nombre_usuario">nombre de usuario</label>
+        nombre de usuario<br>
         <input type="text" name="nombre-usuario">
       </div>
       <div class="label">
-        <label for="contraseña">contraseña</label>
+        contraseña<br>
         <input type="password" name="contraseña">
       </div>
       <div class="label">
+        <br>
         <input type="submit" value="entrar">
       </div>
+      <br>
+      <button class="btn"><a href="\incremental\formRegistro.php">registrarse</a></button>
     </form>
 
 
